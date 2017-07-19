@@ -1,0 +1,851 @@
+/* Body section */
+
+body
+{
+	margin: 0px;
+	background-color: #F5F5F5;
+	font-family: 'Roboto', Arial, Verdana, sans-serif;
+}
+
+/* Header section */
+
+header /* Header container */
+{
+	width: 100%;
+	height: 80px;
+	background-color: #2196F3;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	position: fixed;
+	top: 0px;
+	z-index: 1;	
+}
+
+header h1, img /* Add a margin for the header */
+{
+	margin: 15px;
+}
+
+#description /* Format for description */
+{
+	font-size: 20px;
+	font-style: italic;
+}
+
+/* Navigation */
+
+nav
+{
+	display: flex;
+	align-items: center;
+}
+
+nav img
+{
+	cursor: pointer;
+	transition: all 0.3s
+}
+
+nav #menus /* Div containing menus */
+{
+	position: absolute;
+	top: 78px;
+	right: 0px;
+  	border-radius: 2px;
+  	background-color: #fff;
+  	width: 135px;
+  	height: 170px;
+  	padding: 2px 10px;
+  	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+nav p /* Sections */
+{
+	color: black;
+	font-size: 14px;
+	margin: 10px 0px;
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+nav #menus p a
+{
+	text-decoration: none;
+	color: inherit;
+}
+
+nav #menus p:hover /* Effect when hover sections */
+{
+	color: #2196F3;
+}
+
+.visible /* Makes visible dropdown menu */
+{
+	display: inline-block;
+}
+
+.hidden /* Hides dropdown menu */
+{
+	display: none;
+}
+
+.rotate /* Rotate 135 degrees img menu */
+{
+	-webkit-transform: rotate(135deg);
+	-moz-transform: rotate(135deg);
+	-ms-transform: rotate(135deg);
+	-o-transform: rotate(135deg);
+	transform: rotate(135deg);
+}
+
+.rotateOrigin /* Rotate 270 degrees img menu */
+{
+	-webkit-transform: rotate(270deg);
+	-moz-transform: rotate(270deg);
+	-ms-transform: rotate(270deg);
+	-o-transform: rotate(270deg);
+	transform: rotate(270deg);
+}
+
+/* Experience section */
+
+.title /* Titles of each section */
+{
+	color: #2196F3;
+	margin-left: 15px;
+	margin-bottom: 0px;
+	margin-top: 10px;
+	font-size: 32px;
+}
+
+.container, #skills-container, #last-container, #extra-container, #exp-container /* Container of cards to display as rows */
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+/* Experiences background color */
+
+.experience /* Experience card container */
+{
+	display: flex;
+	flex-direction: column;
+  	border-radius: 2px;
+  	color: white;
+  	flex: 1;
+  	height: 220px;
+  	margin: 15px 15px;
+  	padding: 5px;
+  	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.experience:nth-child(4) 
+{
+	background-color: #008e59; /* Couleur arrière plan première expérience */
+}
+
+.experience:nth-child(3) 
+{
+	background-color: #4c79b2; /* Couleur arrière plan deuxième expérience */
+}
+
+.experience:nth-child(2) 
+{
+	background-color: #0086b8; /* Couleur arrière plan troisieme expérience */
+}
+
+.experience:nth-child(1) 
+{
+	background-color: #2196F3; /* Couleur arrière plan dernière expérience */
+}
+
+/* Experiences margins and sizes */
+
+.experience h4, .experience h5, .experience ul /* Ajotu d'une marge pour les titres et les listes à puces */
+{
+	margin: 5px;
+}
+
+.experience ul li /* Liste à puce des accomplissements lors des mes expériences */
+{
+	margin: 5px 0px;
+	font-size: 14px;
+}
+
+/* Animation on cards when user hover */
+
+.experience:hover, .proud:hover, .pie:hover, .bar:hover, #philo-card:hover, #langue:hover, #day:hover, .mini-card:hover, #strength-card:hover
+{
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+/* Prouds & Programmation section */
+
+#prouds, #development /* Prouds and development sections flexbox as a column */
+{
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+
+.content /* Main disposal for containers to be on the same line */
+{
+	display: flex;
+	flex-direction: row;
+}
+
+.proud /* Container for prouds */
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  	border-radius: 2px;
+  	color: white;
+  	background-color: #F44336;
+  	width: 300px;
+  	height: 120px;
+  	margin: 15px;
+  	padding: 10px;
+  	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.proud h4, .proud h5, .proud img
+{
+	margin: 5px; /* Margin titles and icons */ 
+	word-wrap: break-word;
+}
+
+/* Stats objects, histograms and pie charts */
+
+.pie /* Container for pie charts */
+{
+  	border-radius: 2px;
+  	background-color: #fff;
+  	height: 250px;
+  	width: 300px;
+  	margin: 15px 15px;
+  	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.bar /* Container for histograms */
+{
+	border-radius: 2px;
+  	background-color: #fff;
+  	height: 220px;
+  	width: 600px;
+  	margin: 15px 15px;
+  	padding: 15px;
+  	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+#field, #type /* Placement pie charts field and type */
+{
+	display: flex;
+	justify-content: center;
+	margin: auto;
+}
+
+/* Work philosophy section */
+
+#philo-card /* Container for the quote */
+{
+	border-radius: 2px;
+  	background-color: #3F51B5;
+  	color: #fff;
+  	height: 142px;
+  	width: 100%;
+  	margin: 15px 15px;
+  	padding: 0px 10px;
+  	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+#philo-card h3 /* Quote text format */
+{
+	font-style: italic;
+	margin: 10px 0px;
+}
+
+#philo-card h5 /* Author quote format */
+{
+	display: flex;
+	justify-content: flex-end;
+	margin: 0px;
+}
+
+/* Section langues */
+
+#langue /* Conteneur des langues */
+{
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+  	border-radius: 2px;
+  	width: 300px;
+  	height: 250px;
+  	margin: 15px;
+  	padding-right: 20px;
+  	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+#langue div /* Disposition Flexbox pour aligner l'image avec le texte sur la même ligne */
+{
+	display: flex;
+	align-items: center;
+}
+
+/* Journée type */
+
+#day /* Conteneur du graphe d'une journée type */
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+  	border-radius: 2px;
+  	width: 298px;
+  	height: 250px;
+  	margin: 15px;
+  	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+/* Section realisation et education */
+
+.mini-card /* Conteneur des réalisations et de l'éducation */
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+  	border-radius: 2px;
+  	height: 200px;
+  	width: 200px;
+  	margin: 15px;
+  	padding: 5px;
+  	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.content .mini-card:nth-child(1) 
+{
+	background-color: #77b834; /* Couleur arrière plan conteneur des réalisations Android */
+}
+
+.content .mini-card:nth-child(2) 
+{
+	background-color: #2196F3; /* Couleur arrière plan conteneur des réalisations IOS */
+}
+
+.content .mini-card:nth-child(3) 
+{
+	background-color: #F44336; /* Couleur arrière plan conteneur des réalisations WEB */
+}
+
+.mini-card ul li /* Couleur blanche du texte des listes à puces des réalisations */
+{
+	color: white;
+}
+
+.mini-card a /* Style des liens dans les réalisations */
+{
+	text-decoration: none;
+	color: white;
+}
+
+/* Faiblesses/Forces section */
+
+#education-strength
+{
+	display: flex;
+	flex-direction: row; /* Container for education and strengths cards */
+}
+
+#strength-card /* Création du conteneur des forces et des faiblesses */
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	background-color: #fff;
+  	border-radius: 2px;
+  	height: 200px;
+  	width: 335px;
+  	margin: 15px;
+  	padding: 5px;
+  	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+#strength-card h4 
+{
+	margin: 5px 20px; /* Ajout d'une marge pour les titres Forces et Faiblesses */
+}
+
+.weakness, .strength /* Disposition en flexbox des forces et des faiblesses */
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin: 5px 10px;
+	font-size: 16px;
+}
+
+.weakness p, .strength p /* Pour les forces et les faiblesses, mise en forme et ajout d'une bordure arrondie */
+{
+	padding: 3px;
+	margin: auto;
+	border-radius: 5px;
+	color: #fff;
+}
+
+.weakness p
+{
+	background-color: #F44336; /* Met en rouge le background des faiblesses */
+}
+
+.strength p
+{
+	background-color: #2196F3; /* Met en bleu le background des forces */
+}
+
+/* Footer with contact info */
+
+footer
+{
+	width: 100%;
+	height: 80px;
+	background-color: #2196F3;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.contact
+{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.contact p
+{
+	margin: 10px;
+}
+
+/* Media queries for a responsive design */
+
+/* Media query when window size is at least 1280 px */
+@media screen and (max-width: 1280px) {
+
+	#last-container
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		flex: 1;
+	}
+
+	#strength-card
+	{
+  		width: 648px;
+  		align-items: center;
+	}
+
+	.weakness p, .strength p
+	{
+		margin: 0px 5px;
+	}
+
+	.mini-card
+	{
+  		width: 305px;
+	}
+
+	#day-container
+	{
+		display: none;
+	}
+
+	#extra-container
+	{
+		justify-content: flex-start;
+	}
+}
+
+/* Media query when window size is at least 1270 px */
+
+@media screen and (max-width: 1270px) {
+
+	#exp-container, #skills-container
+	{
+		flex-direction: column;
+	}
+
+	.experience 
+	{
+		width: 1000px;
+		-ms-flex : 1 0 auto;
+	}
+
+	.experience h4, .experience h5, .experience ul li
+	{
+		margin: 10px;
+	}
+
+	.experience h4
+	{
+		font-size: 20px;
+	}
+
+	.experience h5, .experience ul li
+	{
+		font-size: 16px;
+	}
+
+	#dev-container
+	{
+		display: flex;
+		flex-direction: row;
+		width: 1100px;	
+	}
+
+	#proud-container
+	{
+		flex-direction: column;
+	}
+
+	#prouds
+	{
+		width: 1035px;
+	}
+
+	.proud
+	{
+		width: 500px;
+	}
+
+	#philo-card h3
+	{
+		margin: 20px 10px;
+	}
+
+	.pie
+	{
+  		width: 200px;
+  		margin: 15px 15px;
+	}
+
+	.bar
+	{
+		width: 518px;
+	}
+}
+
+/* Media query when window size is at least 1030 px */
+
+@media screen and (max-width: 1030px) {
+
+	header h1
+	{
+		font-size: 24px;
+	}
+
+	#description
+	{
+		font-size: 16px;
+	}
+
+	#strength-card
+	{
+  		width: 398px;
+	}
+
+	.mini-card
+	{
+  		width: 180px;
+	}
+
+	#extra-container .bar
+	{
+		width: 450px;
+	}
+
+	.proud
+	{
+		width: 500px;
+	}
+
+	#prouds
+	{
+		width: 858px;
+	}
+
+	#dev-container
+	{
+		flex-direction: column;
+		justify-content: center;
+		width: 860px;
+	}
+
+	#dev-container .bar
+	{
+		width: 830px;
+	}
+}
+
+/* Media query when window size is at least 860 px */
+
+@media screen and (max-width: 860px) {
+
+	header h1
+	{
+		font-size: 22px;
+	}
+
+	#description
+	{
+		font-size: 14px;
+	}
+
+	#extra-container
+	{
+		flex-direction: column;
+		width: 75%;
+	}
+
+	#langue
+	{
+		align-items: center;
+	}
+
+	#extra-container .bar, #dev-container .bar
+	{
+		width: 560px;
+	}
+
+	#prouds
+	{
+		width: 75%;
+	}
+
+	#philo-card h3
+	{
+		font-size: 16px;
+		margin: 10px 5px;
+	}
+
+	#philo-card h5
+	{
+		font-size: 12px;
+	}
+}
+
+/* Media query when window size is at least 670 px */
+
+@media screen and (max-width: 670px) {
+	
+	header h1
+	{
+		font-size: 20px;
+	}
+
+	.title 
+	{
+		font-size: 22px;
+	}
+
+	#description
+	{
+		display: none;
+	}
+
+	#education-strength
+	{
+		flex-direction: column;
+		width: 75%;
+	}
+
+	.mini-card
+	{
+		width: 400px;
+	}
+	.content
+	{
+		flex-direction: column;
+	}
+
+	#extra-container .bar, #dev-container .bar
+	{
+		width: 382px;
+	}
+
+	#langue
+	{
+		width: 390px;
+	}
+
+	#prouds
+	{
+		width: 70%;
+	}
+
+	.proud, #philo-card
+	{
+		width: 392px;
+	}
+
+	#dev-container .content
+	{
+		flex-direction: row;
+	}
+
+	.pie
+	{
+  		width: 191px;
+	}
+
+	#exp-container
+	{
+		width: 73%;
+	}
+
+	.experience h4
+	{
+		font-size: 18px;
+	}
+
+	.experience h5
+	{
+		font-size: 14px;
+	}
+
+	.experience ul li
+	{
+		font-size: 13px;
+	}
+
+	.experience h4, .experience h5, .experience ul li
+	{
+		margin: 5px 5px;
+	}
+
+	.contact img
+	{
+		display: none;
+	}
+
+	.contact p
+	{
+		font-size: 14px;
+	}
+}
+
+/* Media query when window size is at least 450 px */
+
+@media screen and (max-width: 450px) {
+
+	header h1
+	{
+		font-size: 18px;
+	}
+
+	.title, .experience h4
+	{
+		font-size: 15px;
+	}
+
+	.experience h5, .proud h5
+	{
+		font-size: 13px;
+	}
+
+	.experience ul li, #philo-card h3, #philo-card h5
+	{
+		font-size: 12px;
+	}
+
+	#exp-container
+	{
+		width: 100%;
+	}
+
+	#dev-container .content
+	{
+		flex-direction: column;
+		width: 30%;
+	}
+
+	.pie
+	{
+  		width: 245px;
+	}
+
+	#dev-container .bar, #extra-container .bar
+	{
+		width: 255px;
+	}
+
+	.proud, #philo-card, #langue
+	{
+		width: 225px;
+	}
+
+	.proud h4
+	{
+		font-size: 14px;
+	}
+
+	#langue h5
+	{
+		display: none;
+	}
+
+	.mini-card
+	{
+		width: 235px;
+	}
+
+	#strength-card
+	{
+		height: 400px;
+		width: 232px;
+	}
+	.weakness, .strength
+	{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.weakness p, .strength p
+	{
+		font-size: 14px;
+	}
+
+	footer
+	{
+		flex-direction: column;
+	}
+
+	.contact p
+	{
+		font-size: 14px;
+	}
+}
